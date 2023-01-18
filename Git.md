@@ -9,24 +9,36 @@ config
 ```
 git config user.name username
 git config -g user.email email
+git config --global -e # open config file
+git config --global core.autocrlf true/input # windows/unix
 ```
 
 staging
 ```
+git add file1 file2
+git add *.txt
 git add .
 git add all
 git add -A
 ```
 
+list
+```
+git ls-files # staged
+git ls-tree HEAD~3 # change files of a commit
+```
+
 commit
  ```
  git commit -m "message"
+ git commit # opens editor
  git commit -ma "commit and stage"
  ```
  
  status
  ```
  git status
+ git status -s
  ```
  
  logs
@@ -38,6 +50,7 @@ commit
  restore to previous environment
  ```
  git restore
+ git restore --source=HEAD~1 file1
  ```
  
  clear git cache
@@ -59,6 +72,12 @@ commit
  ```
  git diff
  git diff hashCode
+ ```
+ 
+ show changes
+ ```
+ git show HEAD~1 # 2nd from last
+ git show HEAD~3:file # changes in file
  ```
  
  change a commit
@@ -127,6 +146,12 @@ commit
  git clone url
  git fetch
  git pull
+ ```
+ 
+ help
+ ```
+ git --help
+ git -h # short
  ```
  
  ## Git Notes
