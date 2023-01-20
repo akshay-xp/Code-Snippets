@@ -57,3 +57,33 @@ tar -cvf file1.tar dir1
 tar -xvf file1.tar # extract
 tar -xvzf file1.tar # extract compressed tar
 ```
+running processes
+```
+top
+```
+commang history
+```
+history
+```
+zip
+```
+zip archive.zip file1
+unzip archive.zip
+```
+hostname / ip
+```
+hostname
+hostname -i
+```
+apt-get update # sync
+apt-get upgrade # latest version
+apt-get check # broken dependencies
+```
+editor
+```
+nano file1
+```
+chaining commands
+```
+cmd1 && cmd2
+```
