@@ -75,6 +75,8 @@ hostname / ip
 hostname
 hostname -i
 ```
+install
+```
 apt-get update # sync
 apt-get upgrade # latest version
 apt-get check # broken dependencies
